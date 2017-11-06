@@ -40,8 +40,6 @@ let dataGetter = (currency) => {
 //function to buy a currency and Add it to ownedCurrenciesList
 let buy = (currency) => {
   //write code to execute a buy order @ askPrice*spreadAccounter
-  //add the currency to list of owned currencies
-  ownedCurrenciesList.push(currency);
   //update buyTime and buyPrice
   currency['buyTime'] = /*Bittrex API should have a way to access this and store it here. If not, we will have to calculate it ourselves*/;
   currency['buyPrice'] = /*Bittrex API should have a way to access this and store it here. If not, we will have to calculate it ourselves*/;
@@ -50,5 +48,4 @@ let buy = (currency) => {
 //function to buy a currency and remove it from ownedCurrenciesList
 let sell = (currency) => {
   //write code to execute a sell order @ bidPrice*liquidator
-  remove(currency, ownedCurrenciesList);
 };
